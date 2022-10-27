@@ -4,6 +4,9 @@
   "description": "this is just a playground to learn the basics again",
   "main": "app.js",
   "scripts": {
+    "dev": "node app.js",
+    "debug": "node --inspect app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steven Mokoena",
