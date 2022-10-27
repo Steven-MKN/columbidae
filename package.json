@@ -1,0 +1,14 @@
+{
+  "name": "node_payground",
+  "version": "0.0.1",
+  "description": "this is just a playground to learn the basics again",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Mokoena",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

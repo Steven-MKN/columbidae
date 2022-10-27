@@ -1,14 +1,16 @@
-const http = require('http');
+'use strict';
+
+const express = require('express');
 
 const hostname = '127.0.0.1';
-const port = 4000;
+const port = 8080;
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
+const app = express();
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`)
+app.get('/', (req, res) => {
+    res.send('Hello World');
+})
+
+app.listen(port,() => {
+    console.log(`Server running at http://${hostname}:${port}`)
 });
