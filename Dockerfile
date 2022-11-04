@@ -1,16 +1,19 @@
 FROM node:18
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/node_playground
 
 COPY package*.json /
 
-RUN npm ci --only=production
+RUN npm install
+RUN npm install typescript -g
+
 
 COPY . .
+RUN npm run build
 
 EXPOSE 8080
 
-CMD ["node", "app.js"]
+CMD ["node", "build/app.js"]
 
 
 

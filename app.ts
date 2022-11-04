@@ -10,7 +10,7 @@ const port: number = 8080;
 const app = express();
 
 app.get('/', (req: any, res:any) => {
-    res.send('Hello World ' + some_helper_func(1,1));
+    res.send('Hello World' + some_helper_func(1,1));
 })
 
 type resp = {
